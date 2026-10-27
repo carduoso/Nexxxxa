@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nexxa | Assistente de IA para o atendimento de consultórios</title>
+<meta name="description" content="A Nexxa é uma assistente de inteligência artificial que organiza o atendimento administrativo de consultórios e clínicas pelo WhatsApp, com a equipe sempre no controle.">
+<meta property="og:title" content="Nexxa | Atendimento inteligente para consultórios">
+<meta property="og:description" content="Dúvidas administrativas, agendamentos e lembretes no WhatsApp, com supervisão humana.">
+<meta name="theme-color" content="#050a07">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23050a07'/%3E%3Cpath d='M9 24V8l14 16V8' fill='none' stroke='%233dff8a' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=DM+Sans:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+ <div class="wrap bar">
+  <a class="logo" href="#inicio" aria-label="Nexxa, início"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><path d="M9 24V8l14 16V8" fill="none" stroke="#3dff8a" stroke-width="3"/></svg>Nexxa</a>
+  <button class="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  <nav id="menu">
+   <a href="#problema">Problema</a><a href="#como-funciona">Como funciona</a><a href="#beneficios">Recursos</a><a href="#demo">Demonstração</a><a href="#faq">Dúvidas</a>
+   <button class="btn sm" data-open-demo>Solicitar demonstração</button>
+  </nav>
+ </div>
+</header>
+
+<main id="inicio">
+<section class="hero wrap">
+ <div class="hero-txt">
+  <h1>Seu consultório atende pacientes. A Nexxa cuida das conversas.</h1>
+  <p class="lead">Assistente de inteligência artificial que organiza o atendimento administrativo pelo WhatsApp: dúvidas, agendamentos e lembretes, com a sua equipe sempre no controle.</p>
+  <div class="cta-row"><button class="btn" data-open-demo>Solicitar demonstração</button><a class="btn ghost" href="#como-funciona">Como funciona</a></div>
+  <p class="note">Solução em desenvolvimento. A conversa ao lado é uma simulação ilustrativa.</p>
+ </div>
+ <div class="phone" role="img" aria-label="Simulação ilustrativa de uma conversa no WhatsApp entre paciente e assistente virtual">
+  <div class="phone-h"><i></i><div><b>Consultório Exemplo</b><small>assistente virtual</small></div></div>
+  <div class="chat" id="hero-chat"></div>
+ </div>
+</section>
+
+<section id="problema" class="sec wrap rv">
+ <h2>O WhatsApp do consultório não para.</h2>
+ <p class="sub">Quando o atendimento depende só de mensagens manuais, a rotina da recepção pesa.</p>
+ <div class="grid g3">
+  <article class="card"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><h3>Demora para responder</h3><p>Mensagens chegam fora do horário ou durante o atendimento e esperam por uma resposta.</p></article>
+  <article class="card"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg><h3>Perguntas repetitivas</h3><p>Endereço, horários, valores e convênios são perguntados todos os dias, ocupando a equipe.</p></article>
+  <article class="card"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg><h3>Agendamentos dispersos</h3><p>Pedidos de marcação chegam de forma desorganizada e exigem idas e vindas.</p></article>
+  <article class="card"><svg viewBox="0 0 24 24"><path d="M6 17V9a6 6 0 0112 0v8l2 2H4zM10 21h4"/></svg><h3>Confirmações e lembretes</h3><p>Confirmar consultas e avisar pacientes toma tempo e costuma ficar para depois.</p></article>
+  <article class="card"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0114-5l2-2v6h-6l2.3-2.3A5 5 0 007 12M20 12a8 8 0 01-14 5l-2 2v-6h6l-2.3 2.3A5 5 0 0017 12"/></svg><h3>Conversas sem retorno</h3><p>Contatos que não terminaram o atendimento se perdem sem acompanhamento.</p></article>
+ </div>
+</section>
+
+<section class="sec wrap split rv">
+ <div><h2>O que é a Nexxa</h2>
+ <p class="lead">A Nexxa é uma assistente virtual que atende os pacientes pelo WhatsApp do consultório. Ela cuida da parte administrativa, reduz tarefas repetitivas e organiza a comunicação, para que a equipe foque no que exige uma pessoa.</p></div>
+ <div class="limits"><h3>Atendimento administrativo, nunca clínico</h3>
+  <ul><li>Não diagnostica nem interpreta sintomas</li><li>Não prescreve nem recomenda tratamentos</li><li>Não substitui profissionais de saúde</li><li>Avisa que é uma IA e oferece falar com uma pessoa</li></ul></div>
+</section>
+
+<section id="como-funciona" class="sec wrap rv">
+ <h2>Como funciona</h2>
+ <ol class="steps">
+  <li><span>1</span><h3>Paciente chama</h3><p>O contato começa pelo WhatsApp do consultório.</p></li>
+  <li><span>2</span><h3>Assistente responde</h3><p>Responde dúvidas administrativas com base nas informações cadastradas pela clínica.</p></li>
+  <li><span>3</span><h3>Agendamento</h3><p>Ajuda a marcar e pode consultar horários, conforme a integração com a agenda do consultório.</p></li>
+  <li><span>4</span><h3>Equipe acompanha</h3><p>A equipe vê as conversas e assume o atendimento quando necessário.</p></li>
+ </ol>
+ <p class="note">O agendamento depende da configuração e da integração com a agenda utilizada por cada consultório.</p>
+</section>
+
+<section id="beneficios" class="sec wrap rv">
+ <h2>Como a Nexxa ajuda</h2>
+ <div class="grid g3">
+  <article class="card"><h3>Respostas automatizadas</h3><p>Horários, endereço, valores, convênios e especialidades, usando apenas as informações fornecidas pelo consultório.</p></article>
+  <article class="card"><h3>Agendamentos organizados</h3><p>Apoia marcação, confirmação, remarcação e cancelamento, conforme as integrações disponíveis.</p></article>
+  <article class="card"><h3>Lembretes de consultas</h3><p>Mensagens configuráveis para lembrar os pacientes dos compromissos.</p></article>
+  <article class="card"><h3>Acompanhamento de conversas</h3><p>Retoma contatos que não concluíram o atendimento, conforme as regras configuradas.</p></article>
+  <article class="card"><h3>Supervisão humana</h3><p>Encaminha para a equipe quando o paciente pede ou quando falta a informação. Em palavras de urgência, segue uma resposta fixa e avisa a equipe.</p></article>
+  <article class="card"><h3>Painel de acompanhamento</h3><p>Interface web prevista para ver conversas, agenda e indicadores de atendimento.</p></article>
+ </div>
+</section>
+
+<section id="demo" class="sec wrap rv">
+ <h2>Veja a experiência</h2>
+ <p class="sub">Demonstração visual com dados fictícios. Não representa um produto já implantado.</p>
+ <div class="tabs" role="tablist" aria-label="Cenários da demonstração"></div>
+ <div class="demo-body"><div class="phone"><div class="phone-h"><i></i><div><b>Consultório Exemplo</b><small>simulação</small></div></div><div class="chat" id="demo-chat" aria-live="polite"></div></div><div id="demo-panel" hidden></div><p id="demo-cap" class="note"></p></div>
+ <button class="btn ghost sm" id="replay">Reiniciar cenário</button>
+</section>
+
+<section id="faq" class="sec wrap rv">
+ <h2>Dúvidas frequentes</h2>
+ <details><summary>A Nexxa orienta sobre sintomas ou exames?</summary><p>Não. Ela não diagnostica, não interpreta sintomas, não indica remédios nem opina sobre exames. Esses assuntos são sempre encaminhados à equipe.</p></details>
+ <details><summary>E se o paciente relatar uma urgência?</summary><p>Palavras de urgência ativam uma resposta fixa, com orientação de procurar um pronto-socorro ou o SAMU (192), e um alerta imediato à equipe. Não é uma avaliação da IA.</p></details>
+ <details><summary>O paciente sabe que fala com uma IA?</summary><p>Sim. A primeira mensagem informa que é um atendimento automatizado e oferece a opção de falar com uma pessoa.</p></details>
+ <details><summary>A Nexxa já funciona com a minha agenda?</summary><p>A proposta é integrar com a agenda do consultório. A disponibilidade depende do sistema utilizado e da configuração. Solicite uma demonstração para conversar sobre o seu caso.</p></details>
+</section>
+
+<section class="final wrap rv">
+ <h2>Seu atendimento pode ser mais inteligente.</h2>
+ <p class="lead">Conheça a Nexxa e veja como ela pode organizar a comunicação do seu consultório.</p>
+ <button class="btn" data-open-demo>Solicitar demonstração</button>
+</section>
+</main>
+
+<footer class="wrap foot"><span>© <span id="yr"></span> Nexxa</span><span>Assistente administrativa. Não presta atendimento clínico.</span></footer>
+
+<dialog id="dlg" aria-labelledby="dlg-t">
+ <form id="form" novalidate>
+  <div class="dlg-h"><h2 id="dlg-t">Solicitar demonstração</h2><button type="button" class="x" data-close aria-label="Fechar">&times;</button></div>
+  <p class="note">Informe apenas dados profissionais. Não envie dados de pacientes.</p>
+  <label>Nome<input name="nome" autocomplete="name" required><em></em></label>
+  <label>Consultório ou clínica<input name="clinica" autocomplete="organization" required><em></em></label>
+  <label>E-mail profissional<input name="email" type="email" autocomplete="email" required><em></em></label>
+  <label>Especialidade<input name="especialidade" required><em></em></label>
+  <label>Principal necessidade de atendimento (opcional)<textarea name="necessidade" rows="3" maxlength="400"></textarea></label>
+  <input name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <button class="btn" type="submit"><span>Enviar solicitação</span></button>
+  <p id="status" role="status"></p>
+ </form>
+</dialog>
+<script src="main.js"></script>
+</body>
+</html>
